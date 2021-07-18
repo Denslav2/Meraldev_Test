@@ -1,0 +1,169 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+    background: $white;
+}
+
+.logo {
+    display: inline-block;
+    padding-top: 53px;
+    padding-left: 63px;
+}
+
+.btn {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+    &__img{
+        margin-right: 12px;
+    }
+
+    &__f {
+        border: 1px solid #4968AD;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 160px;
+        height: 60px;
+        margin-right: 32px;
+        color: #4968AD;
+        font-size: 16px;
+        line-height: 130%;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:active{
+            background-color: rgb(136, 210, 240);
+        }
+    }
+    &__g{
+        border: 1px solid $red;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 160px;
+        height: 60px;
+        color: $red;
+        font-size: 16px;
+        line-height: 130%;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:active{
+            background-color: rgb(221, 149, 149);
+        }   
+    }
+}
+
+input[type="text"]{
+    color: $VioletLight;
+}
+
+/*index*/
+
+
+
+/*login*/
+.login-form {
+    margin: 0 auto;
+    max-width: 352px;
+    font-family: 'Noir Pro';
+
+    &__title {
+        text-align: center;
+        font-size: 30px;
+        line-height: 40.8px;
+        margin-bottom: 40px;
+        color: $Violet;
+    }
+
+    &__input {
+        width: 100%;
+        height: 70px;
+        background-color: $white;
+        border: none;
+        font-size: 18px;
+        line-height: 25px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        &::placeholder{
+            color: $VioletLight;
+            padding-left: 16px;
+        }
+    }
+
+    &__resset-pass {
+        font-size: 18px;
+        line-height: 25px;
+        text-align: left;
+        color: $Violet;
+    }
+
+    &__link {
+        color: $red;
+    }
+
+    &__btn {
+        width: 100%;
+        height: 70px;
+        background-color: $red;
+        box-shadow: 0px 3px 10px rgba(88, 19, 27, 0.1);
+        border-radius: 4px;
+        font-size: 20px;
+        line-height: 24px;
+        color: $white;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 46px;
+        &:active{
+            background-color: rgb(221, 149, 149);
+        }
+    }
+
+    &__btn-box{
+        display: flex;
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-size: 24px;
+        line-height: 32.64px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        color: $Violet;
+    }
+    &__text{
+        padding-top: 40px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 25px;
+        color: $Violet;
+    }
+}
+
+.login-copyright {
+    padding-top: 214px;
+    padding-bottom: 30px;
+    padding-right: 60px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 136%;
+    text-align: right;
+    color: $Violet;
+    opacity: 0.5;
+    &__link{
+        text-decoration: none;
+        color: $Violet;
+    }
+}
+
+@import "media";
