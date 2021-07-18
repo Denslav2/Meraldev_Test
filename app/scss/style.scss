@@ -2,6 +2,12 @@
 @import "libs";
 @import "fonts";
 
+body {
+    font-family: 'Noir Pro';
+    font-style: normal;
+    font-weight: normal;
+}
+
 .container {
     max-width: 1440px;
     width: 100%;
@@ -10,7 +16,6 @@
 }
 
 .logo {
-    display: inline-block;
     padding-top: 53px;
     padding-left: 63px;
 }
@@ -23,7 +28,7 @@
     background-color: transparent;
     cursor: pointer;
 
-    &__img{
+    &__img {
         margin-right: 12px;
     }
 
@@ -41,11 +46,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        &:active{
+
+        &:active {
             background-color: rgb(136, 210, 240);
         }
     }
-    &__g{
+
+    &__g {
         border: 1px solid $red;
         box-sizing: border-box;
         border-radius: 4px;
@@ -58,19 +65,189 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        &:active{
+
+        &:active {
             background-color: rgb(221, 149, 149);
-        }   
+        }
     }
 }
 
-input[type="text"]{
+input[type="text"] {
     color: $VioletLight;
 }
 
+.copyright {
+    text-align: right;
+    font-size: 14px;
+    line-height: 136%;
+    text-align: right;
+    color: $Violet;
+    opacity: 0.5;
+
+    &__link {
+        text-decoration: none;
+        color: $Violet;
+    }
+}
+
 /*index*/
+.header {
+    display: flex;
 
+    &__btn {
+        border: dashed rgb(175, 175, 175) 2px;
+        width: 30px;
+        height: 30px;
+        margin-top: 80px;
+        margin-left: 50px;
+    }
+}
 
+.user-logo {
+    display: flex;
+    align-items: center;
+    padding-top: 63px;
+    padding-left: 882px;
+
+    &__descr {
+        padding-left: 10px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 136%;
+        color: $red;
+    }
+
+    &__name {
+        font-size: 16px;
+        line-height: 130%;
+        font-weight: 700;
+        color: $red;
+    }
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+        font-family: 'Noir Pro-Bold';
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 120%;
+        color: $Violet;
+        padding-left: 160px;
+        padding-top: 77px;
+
+        span {
+            color: $red;
+        }
+    }
+
+    &__search {
+        width: 260px;
+        height: 48px;
+        right: 160px;
+        background: url(../img/search.svg) no-repeat #FFF7F7 center right 15px;
+        border-radius: 4px;
+        border: none;
+        margin-right: 160px;
+        margin-top: 77px;
+
+        &::placeholder {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: $VioletLight;
+            padding-left: 16px;
+        }
+    }
+}
+
+.slider {
+    display: flex;
+    padding-top: 40px;
+    padding-left: 160px;
+
+    &__item {
+        width: 256px;
+        height: 430px;
+        background: linear-gradient(0deg, #171717 20.12%, rgba(23, 23, 23, 0) 100%);
+        border-radius: 4px;
+        margin-left: 32px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &-img {
+            width: 100%;
+            height: 430px;
+        }
+        &-wrapper{
+
+        }    
+        &-title {
+            margin-top: -233px;
+            padding-left: 20px;
+            font-size: 30px;
+            line-height: 120%;
+            color: $white;
+        }
+
+        &-text {
+            padding-top: 10px;
+            padding-left: 20px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 136%;
+            color: $white;
+        }
+
+        &-btn {
+            width: 216px;
+            height: 64px;
+            background: $red;
+            border-radius: 4px;
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 16px;
+            line-height: 130%;
+            font-weight: 700;
+            color: $white;    
+        }
+    }
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 220px;
+    &__item-box{
+        display: flex;
+        padding-left: 60px;
+        padding-bottom: 30px;
+    }
+    &__item{
+        padding-left: 20px;
+        &:first-child{
+            padding-left: 0;
+        }
+        &-link{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 136%;
+            color: $Violet; 
+            text-decoration: none;   
+        }
+    }
+    &__copyright{
+        padding-right: 60px;
+    }
+}
 
 /*login*/
 .login-form {
@@ -99,7 +276,8 @@ input[type="text"]{
         line-height: 136%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         margin-bottom: 20px;
-        &::placeholder{
+
+        &::placeholder {
             color: $VioletLight;
             padding-left: 16px;
         }
@@ -128,12 +306,13 @@ input[type="text"]{
         font-weight: 700;
         text-transform: uppercase;
         margin-top: 46px;
-        &:active{
+
+        &:active {
             background-color: rgb(221, 149, 149);
         }
     }
 
-    &__btn-box{
+    &__btn-box {
         display: flex;
     }
 
@@ -147,7 +326,8 @@ input[type="text"]{
         padding-bottom: 20px;
         color: $Violet;
     }
-    &__text{
+
+    &__text {
         padding-top: 40px;
         text-align: center;
         font-size: 18px;
@@ -156,22 +336,14 @@ input[type="text"]{
         line-height: 136%;
         color: $Violet;
     }
-}
 
-.login-copyright {
-    padding-top: 214px;
-    padding-bottom: 30px;
-    padding-right: 60px;
-    text-align: right;
-    font-size: 14px;
-    line-height: 136%;
-    text-align: right;
-    color: $Violet;
-    opacity: 0.5;
-    &__link{
-        text-decoration: none;
-        color: $Violet;
+    &__copyright {
+        padding-top: 214px;
+        padding-bottom: 30px;
+        padding-right: 60px;
     }
 }
+
+
 
 @import "media";

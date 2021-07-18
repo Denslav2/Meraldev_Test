@@ -7,3 +7,12 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Noir Pro-Bold';
+    src: local('NoirPro-Bold'), local('NoirPro-Light'), 
+    url('../fonts/NoirPro-Bold.woff2') format('woff2'), 
+    url('../fonts/NoirPro-Bold.woff') format('woff'), 
+    url('../fonts/NoirPro-Bold.eot') format('eot');
+    font-weight: 700;
+    font-style: Bold;
+}
