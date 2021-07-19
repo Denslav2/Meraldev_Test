@@ -167,34 +167,67 @@ input[type="text"] {
 }
 
 .slider {
-    display: flex;
     padding-top: 40px;
     padding-left: 160px;
+    padding-right: 160px;
 
+    .slick-slide {
+        width: 283px;
+    }
+    .slick-current{
+        .slider__item-inner{
+            background: linear-gradient(0deg, #171717 20.12%, rgba(23, 23, 23, 0) 30%);
+        }
+        .slider__item-btn{
+            background: none;
+            color: $red;;
+            border:1px solid $red; ;
+        }
+    }
     &__item {
-        width: 256px;
-        height: 430px;
-        background: linear-gradient(0deg, #171717 20.12%, rgba(23, 23, 23, 0) 100%);
-        border-radius: 4px;
-        margin-left: 32px;
-
-        &:first-child {
-            margin-left: 0;
-        }
-
-        &-img {
-            width: 100%;
+    
+        &-wrapper {
+            margin: 0 auto;
+            width: 256px;
             height: 430px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-        &-wrapper{
 
-        }    
+        &-inner {
+            background: linear-gradient(0deg, #171717 20.12%, rgba(23, 23, 23, 0) 100%);
+            height: 430px;
+            border-radius: 4px;
+            transition: all 0.5s;
+            &:hover{
+                background: linear-gradient(0deg, #171717 20.12%, rgba(23, 23, 23, 0) 30%);
+                .slider__item-btn{
+                    background: none;
+                    color: $red;
+                    border:1px solid $red;
+                    &:active{
+                        background: rgb(240, 154, 154);
+                    }
+                }
+            }
+        }
+
         &-title {
-            margin-top: -233px;
+            padding-top: 200px;
             padding-left: 20px;
             font-size: 30px;
             line-height: 120%;
             color: $white;
+            width: 200px;
+            &__item-1{
+                padding-top: 165px;
+                padding-left: 20px;
+                font-size: 30px;
+                line-height: 120%;
+                color: $white;
+                width: 200px;
+            }
         }
 
         &-text {
@@ -217,34 +250,80 @@ input[type="text"] {
             font-size: 16px;
             line-height: 130%;
             font-weight: 700;
-            color: $white;    
+            color: $white;
+            &__white{
+                background: #FFF7F7;
+                width: 216px;
+                height: 64px;
+                border-radius: 4px;
+                margin-top: 20px;
+                margin-left: 20px;
+                font-size: 16px;
+                line-height: 130%;
+                font-weight: 700;
+                color: $red;
+            }
+            
+        }
+    }
+    .btn-prev{
+        width: 70px;
+        height: 70px;
+        background: $red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 35px;    
+    }
+}
+.arrow{
+    &-next{
+        position: absolute;
+        padding-top: 170px;
+        left: 45px;
+        &:hover{
+            opacity: 0.2;
+        }
+    }
+    &-prev{
+        position: absolute;
+        margin-top: -250px;
+        right: 45px;
+        &:hover{
+            opacity: 0.2;
         }
     }
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: space-between;
     padding-top: 220px;
-    &__item-box{
+
+    &__item-box {
         display: flex;
         padding-left: 60px;
         padding-bottom: 30px;
     }
-    &__item{
+
+    &__item {
         padding-left: 20px;
-        &:first-child{
+
+        &:first-child {
             padding-left: 0;
         }
-        &-link{
+
+        &-link {
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
             line-height: 136%;
-            color: $Violet; 
-            text-decoration: none;   
+            color: $Violet;
+            text-decoration: none;
         }
     }
-    &__copyright{
+
+    &__copyright {
         padding-right: 60px;
     }
 }
