@@ -1,7 +1,7 @@
 @import "vars";
 @import "libs";
 @import "fonts";
-
+@import "animate";
 body {
     font-family: 'Noir Pro';
     font-style: normal;
@@ -167,32 +167,54 @@ input[type="text"] {
 }
 
 .slider {
+    position: relative;
     padding-top: 40px;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 150px;
+    padding-right: 150px;
 
     .slick-slide {
         width: 283px;
     }
-    .slick-current{
-        .slider__item-inner{
+
+    .slick-current {
+        .slider__item-inner {
             background: linear-gradient(0deg, #171717 20.12%, rgba(23, 23, 23, 0) 30%);
         }
-        .slider__item-btn{
+
+        .slider__item-btn {
             background: none;
-            color: $red;;
-            border:1px solid $red; ;
+            color: $red;
+            ;
+            border: 1px solid $red;
+            ;
         }
     }
+
     &__item {
-    
+
         &-wrapper {
             margin: 0 auto;
-            width: 256px;
+            max-width: 256px;
+            width: 100%;
             height: 430px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            border-radius: 4px;
+
+            &:hover {
+                .slider__item-title {
+                    display: none;
+                }
+
+                .slider__item-text {
+                    display: none;
+                }
+
+                .slider__item-text__hover {
+                    display: block;
+                }
+            }
         }
 
         &-inner {
@@ -200,13 +222,16 @@ input[type="text"] {
             height: 430px;
             border-radius: 4px;
             transition: all 0.5s;
-            &:hover{
-                background: linear-gradient(0deg, #171717 20.12%, rgba(23, 23, 23, 0) 30%);
-                .slider__item-btn{
+
+            &:hover {
+                //background: linear-gradient(0deg, #171717 20.12%, rgba(23, 23, 23, 0) 30%);
+
+                .slider__item-btn {
                     background: none;
                     color: $red;
-                    border:1px solid $red;
-                    &:active{
+                    border: 1px solid $red;
+
+                    &:active {
                         background: rgb(240, 154, 154);
                     }
                 }
@@ -220,7 +245,8 @@ input[type="text"] {
             line-height: 120%;
             color: $white;
             width: 200px;
-            &__item-1{
+
+            &__item-1 {
                 padding-top: 165px;
                 padding-left: 20px;
                 font-size: 30px;
@@ -238,6 +264,18 @@ input[type="text"] {
             font-size: 18px;
             line-height: 136%;
             color: $white;
+
+            &__hover {
+                display: none;
+                padding-top: 185px;
+                padding-left: 20px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 136%;
+                color: $white;
+                background: linear-gradient(0deg, #171717 40%, rgba(23, 23, 23, 0) 100%);
+            }
         }
 
         &-btn {
@@ -251,7 +289,8 @@ input[type="text"] {
             line-height: 130%;
             font-weight: 700;
             color: $white;
-            &__white{
+
+            &__white {
                 background: #FFF7F7;
                 width: 216px;
                 height: 64px;
@@ -263,34 +302,47 @@ input[type="text"] {
                 font-weight: 700;
                 color: $red;
             }
-            
+
         }
     }
-    .btn-prev{
+
+    .btn-prev {
         width: 70px;
         height: 70px;
         background: $red;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 35px;    
+        border-radius: 35px;
     }
 }
-.arrow{
-    &-next{
+
+.arrow {
+    &-next {
+        width: 64px;
+        height: 64px;
         position: absolute;
+        z-index: 100;
         padding-top: 170px;
         left: 45px;
-        &:hover{
-            opacity: 0.2;
+        opacity: 0.2;
+
+        &:hover {
+            opacity: 1;
         }
     }
-    &-prev{
+
+    &-prev {
+        width: 64px;
+        height: 64px;
         position: absolute;
+        z-index: 110;
         margin-top: -250px;
         right: 45px;
-        &:hover{
-            opacity: 0.2;
+        opacity: 0.2;
+
+        &:hover {
+            opacity: 1;
         }
     }
 }
@@ -325,6 +377,17 @@ input[type="text"] {
 
     &__copyright {
         padding-right: 60px;
+    }
+
+    &__border {
+        display: none;
+        content: "";
+        width: 134px;
+        height: 5px;
+        border-radius: 3px;
+        background: #000000;
+        margin: 0 auto;
+        margin-top: -10px;
     }
 }
 

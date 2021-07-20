@@ -7,17 +7,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MeralDev</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
 <body>
 
   <div class="container">
     <header class="header">
-      <div class="logo">
+      <div class="logo slideInDown wow">
         <img src="../img/meraldev-logo.svg" alt="" class="logo__img">
       </div>
-      <div class="user-logo">
-        <img class="user-logo__img" src="img/user.svg">
+      <div class="user-logo slideInDown wow">
+        <a href="pages/login.html"><img class="user-logo__img" src="img/user.svg"></a>
         <div class="user-logo__descr">
           <div class="user-logo__text">Hello</div>
           <div class="user-logo__name">Username</div>
@@ -27,43 +31,49 @@
     </header>
     <main class="main">
       <div class="main-header">
-        <div class="main-header__title">
+        <div class="main-header__title zoomIn wow" data-wow-delay = ".5s">
           Featured <span>Creators</span>
         </div>
-        <input class="main-header__search" type="search" name="" id="" placeholder="Search">
+        <input class="main-header__search zoomIn wow" type="search" name="" id="" placeholder="Search" data-wow-delay = ".5s">
       </div>
       
       <div class="slider">
-        <div class="slider__item">
+        <div class="slider__item fadeInUp wow" data-wow-delay = ".6s">
           <div class="slider__item-wrapper" style="background-image: url(img/slider_item-0.png);">
             <div class="slider__item-title__item-1">Want to be a featured creator? </div>
             <div class="slider__item-text">Start by creating your own community.</div>
             <button class="btn slider__item-btn__white">Create Community</button>
           </div>
         </div>
-        <div class="slider__item">
+        <div class="slider__item fadeInUp wow" data-wow-delay = ".8s">
           <div class="slider__item-wrapper" style="background-image: url(img/slider_item-1.png);">
             <div class="slider__item-inner">
               <div class="slider__item-title">THE RUBIN<br> REPORT</div>
               <div class="slider__item-text">Get exclusive content. Interact with Dave.</div>
+              <div class="slider__item-text__hover">Get exclusive content. Interact with Bridget. Verified Nobody. 
+                My tribe is tribeless. Captain of the Fence Riding Team. Fiddling while Rome burns. Find another hero.</div>
               <button class="btn slider__item-btn">Open Community</button>
             </div>
           </div>
         </div>
-        <div class="slider__item">
+        <div class="slider__item fadeInUp wow" data-wow-delay = "1s">
           <div class="slider__item-wrapper" style="background-image: url(img/slider_item-2.png);">
             <div class="slider__item-inner">
               <div class="slider__item-title">NGO-GO<br> ZONE</div>
               <div class="slider__item-text">Get exclusive content. Interact with Andy.</div>
+              <div class="slider__item-text__hover">Get exclusive content. Interact with Bridget. Verified Nobody. 
+                My tribe is tribeless. Captain of the Fence Riding Team. Fiddling while Rome burns. Find another hero.</div>
               <button class="btn slider__item-btn">Join community</button>
             </div>
           </div>
         </div>
-        <div class="slider__item">
+        <div class="slider__item fadeInUp wow" data-wow-delay = "1.2s">
           <div class="slider__item-wrapper" style="background-image: url(img/slider_item-3.png);">
             <div class="slider__item-inner">
               <div class="slider__item-title">Bridget<br> Phetasy</div>
               <div class="slider__item-text">Get exclusive content. Interact with Dave.</div>
+              <div class="slider__item-text__hover">Get exclusive content. Interact with Bridget. Verified Nobody. 
+                My tribe is tribeless. Captain of the Fence Riding Team. Fiddling while Rome burns. Find another hero.</div>
               <button class="btn slider__item-btn">Join community</button>
             </div>
           </div>
@@ -73,6 +83,8 @@
             <div class="slider__item-inner">
               <div class="slider__item-title">Micheal<br> Malice</div>
               <div class="slider__item-text">Get exclusive content. Interact with Dave.</div>
+              <div class="slider__item-text__hover">Get exclusive content. Interact with Bridget. Verified Nobody. 
+                My tribe is tribeless. Captain of the Fence Riding Team. Fiddling while Rome burns. Find another hero.</div>
               <button class="btn slider__item-btn">Join community</button>
             </div>
           </div>
@@ -82,6 +94,8 @@
             <div class="slider__item-inner">
               <div class="slider__item-title">Convention <br> of States</div>
               <div class="slider__item-text">Get exclusive content. Interact with Mark.</div>
+              <div class="slider__item-text__hover">Get exclusive content. Interact with Bridget. Verified Nobody. 
+                My tribe is tribeless. Captain of the Fence Riding Team. Fiddling while Rome burns. Find another hero.</div>
               <button class="btn slider__item-btn">Join community</button>
             </div>
           </div>
@@ -96,6 +110,7 @@
       </div>
       <div class="copyright footer__copyright"><a href="http://meraldev.com" class="copyright__link" target="_blank"
           rel="noopener noreferrer">meraldev.com</a> 2020</div>
+          <div class="footer__border"></div>
     </footer>
   </div>
 

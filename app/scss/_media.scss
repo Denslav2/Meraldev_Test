@@ -1,0 +1,297 @@
+@media (max-width: 1400px) {
+    .user-logo {
+        padding-left: 800px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .slider__item-wrapper {
+        max-width: 240px;
+    }
+
+    .slider__item-text__hover {
+        padding-top: 162px;
+    }
+
+    .slider__item-btn {
+        margin-left: 13px;
+    }
+
+    .slider__item-btn__white {
+        margin-left: 13px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .user-logo {
+        padding-left: 700px;
+    }
+
+    .slider__item-wrapper {
+        max-width: 230px;
+    }
+
+    .slider__item-btn {
+        margin-left: 7px;
+    }
+
+    .slider__item-btn__white {
+        margin-left: 7px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .slider__item-wrapper {
+        max-width: 256px;
+    }
+
+    .slider__item-btn {
+        margin-left: 20px;
+    }
+
+    .slider__item-btn__white {
+        margin-left: 20px;
+    }
+
+    .user-logo {
+        padding-left: 600px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .slider__item-wrapper {
+        max-width: 230px;
+    }
+
+    .slider__item-btn {
+        margin-left: 7px;
+    }
+
+    .slider__item-btn__white {
+        margin-left: 7px;
+    }
+
+    .user-logo {
+        padding-left: 550px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .slider {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .user-logo {
+        padding-left: 400px;
+    }
+
+    .slider__item-wrapper {
+        max-width: 256px;
+    }
+
+    .slider__item-btn {
+        margin-left: 20px;
+    }
+
+    .slider__item-btn__white {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 880px) {
+    .user-logo {
+        padding-left: 300px;
+    }
+
+    .slider__item-wrapper {
+        max-width: 230px;
+    }
+
+    .slider__item-btn {
+        margin-left: 7px;
+    }
+
+    .slider__item-btn__white {
+        margin-left: 7px;
+    }
+
+    .main-header__title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 780px) {
+    .user-logo {
+        padding-left: 250px;
+    }
+
+    .main-header__title {
+        padding-left: 100px;
+    }
+
+    .main-header__search {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 720px) {
+    .user-logo {
+        padding-left: 200px;
+    }
+}
+
+@media (max-width: 670px) {
+    .user-logo {
+        padding-left: 150px;
+    }
+}
+
+@media (max-width: 620px) {
+    .user-logo {
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header__btn {
+        display: none;
+    }
+
+    .main-header__title {
+        padding-left: 50px;
+    }
+
+    .main-header__search {
+        margin-right: 50px;
+    }
+
+    .logo {
+        padding-left: 43px;
+    }
+    .slideInUp {
+        display: none;
+    }
+}
+
+@media (max-width: 479px) {
+    .logo {
+        padding-left: 20px;
+    }
+
+    .user-logo__text {
+        display: none;
+    }
+
+    .user-logo__name {
+        display: none;
+    }
+
+    .main-header {
+        flex-wrap: wrap;
+    }
+
+    .main-header__title {
+        width: 200px;
+        padding-left: 20px;
+    }
+
+    .main-header__search {
+        margin: 30px auto;
+    }
+
+    .arrow-prev {
+        margin-top: -631px;
+        padding-right: 20px;
+    }
+
+    .arrow-next {
+        padding-top: 0;
+        margin-top: -200px;
+        left: 223px;
+    }
+
+    .slider {
+        padding-top: 10px;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .footer__item-box {
+        padding-left: 110px;
+    }
+
+    .copyright {
+        text-align: center;
+        padding-bottom: 20px;
+        padding-right: 0;
+    }
+
+    .slider__item-wrapper {
+        max-width: 253px;
+    }
+
+    .slider__item-btn {
+        margin-left: 20px;
+    }
+
+    .slider__item-btn__white {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .footer__item-box {
+        padding-left: 90px;
+    }
+
+    .main-header__title {
+        font-size: 36px;
+    }
+
+    .arrow-next {
+        left: 187px;
+    }
+}
+
+@media (max-width: 375px) {
+    .arrow-prev {
+        padding-right: 0;
+        left: 288px;
+    }
+
+    .arrow-next {
+        left: 215px;
+    }
+
+    .logo {
+        padding-top: 43px;
+    }
+
+    .user-logo {
+        padding-top: 53px;
+        padding-left: 90px;
+    }
+
+    .main-header__title {
+        padding-top: 27px;
+    }
+
+    .main-header__search {
+        margin-top: 20px;
+        width: 335px;
+        height: 57px;
+    }
+
+    .footer__item-box {
+        padding-left: 66px;
+    }
+    .footer__border{
+        display: block;
+    }
+    .copyright {
+        padding-bottom: 48px;
+    }
+}
